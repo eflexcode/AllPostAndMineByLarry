@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "739353697537",
+    "firebase_url": "https://all-post-and-mine.firebaseio.com",
+    "project_id": "all-post-and-mine",
+    "storage_bucket": "all-post-and-mine.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739353697537:android:1dd6dd9bbc78c6721c0f00",
+        "android_client_info": {
+          "package_name": "com.eflexsoft.allpostandmine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739353697537-1u88jpmvod35i5v96e7l6bpagaupbg9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYcqA2ly_toAifukb5l_vJlEb1P9HHeOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "739353697537-1u88jpmvod35i5v96e7l6bpagaupbg9p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    android:layout_margin="10dp"
+    android:background="#7B7B7E">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingStart="10dp"
+            android:textColor="#000"
+            android:id="@+id/post_tile"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000"
+            android:layout_below="@id/post_tile"
+            android:id="@+id/post_body"
+            android:textSize="23sp"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:paddingStart="15dp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/post_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="?android:selectableItemBackground"
+            android:layout_below="@id/post_body"
+            android:onClick="openGallery"
+            android:src="@drawable/ic_image_2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#535252"
+            android:layout_below="@id/post_image"
+            android:id="@+id/post_date"
+            android:gravity="end"
+            android:textSize="18sp"
+            android:layout_alignParentEnd="true"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

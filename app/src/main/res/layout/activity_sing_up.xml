@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingUpActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:onClick="finish"
+            android:src="@drawable/ic_arrow" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:paddingStart="10dp"
+            android:text="Sign up"
+            android:textColor="#fff"
+            android:textSize="23sp"
+            android:textStyle="normal" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pro_pic"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:src="@drawable/no_p"
+                app:civ_border_color="@color/colorAccent"
+                app:civ_border_width="2dp" />
+
+            <Button
+                android:id="@+id/pick_image"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/pro_pic"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorAccent"
+                android:text="pick an image"
+                android:onClick="openGallery"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pick_image"
+                android:layout_margin="15dp"
+                android:hint="username"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textSize="23dp"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAlwaysShown="false"
+                app:met_floatingLabelText="username"
+                app:met_floatingLabelTextColor="@color/colorAccent"
+                app:met_floatingLabelTextSize="18dp"
+                app:met_primaryColor="@color/colorAccent"
+                app:met_textColorHint="@color/colorAccent" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username"
+                android:layout_margin="15dp"
+                android:hint="email"
+                android:inputType="textEmailAddress"
+                android:text=""
+                android:textSize="23dp"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAlwaysShown="false"
+                app:met_floatingLabelText="email"
+                app:met_floatingLabelTextColor="@color/colorAccent"
+                app:met_floatingLabelTextSize="18dp"
+                app:met_primaryColor="@color/colorAccent"
+                app:met_textColorHint="@color/colorAccent" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email"
+                android:layout_margin="15dp"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:text=""
+                android:textSize="23dp"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAlwaysShown="false"
+                app:met_floatingLabelText="password"
+                app:met_floatingLabelTextColor="@color/colorAccent"
+                app:met_floatingLabelTextSize="18dp"
+                app:met_primaryColor="@color/colorAccent"
+                app:met_textColorHint="@color/colorAccent" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/btn_back"
+                android:onClick="Continue"
+                android:text="Continue"
+                android:textSize="25dp" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
